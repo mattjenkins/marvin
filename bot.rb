@@ -69,7 +69,7 @@ end
 
 def bot_mentioned(client)
   # match on any instances of `<@bot_id>` in the message
-  /\<\@#{client.self['id']}\>+/
+  /\<#{client.self['id']}\>+/
 end
 
 def joiner_is_bot?(client, data)
